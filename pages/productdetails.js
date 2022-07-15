@@ -227,10 +227,10 @@ export default function Example() {
             
 
             {/* Product info */}
-            {/* <div className="sticky top-0 w-full sm:w-1/2">
+            <div className="sticky top-0 w-full sm:w-1/2">
               <h1 className="text-2xl md:text-3xl lg:text-4xl leading-relaxed tracking-wide font-Orpheu">
                 {product.name}
-              </h1> */}
+              </h1>
 
               <div className="mt-3">
                 <h2 className="sr-only">Product information</h2>
