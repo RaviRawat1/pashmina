@@ -224,7 +224,98 @@ export default function Example() {
           <div className="w-full container sm:mx-auto px-4 md:px-6 2xl:px-0 pt-0 sm:pt-14 pb-16 sm:pb-24 flex flex-col sm:flex-row gap-8">
             {/* Image gallery */}
 
-            
+            <Tab.Group
+              as="div"
+              selectedIndex={visibleIndex}
+              onChange={setVisibleIndex}
+              className="flex flex-col-reverse w-full sm:w-1/2 relative justify-end"
+            >
+              {/* Image selector */}
+              <div className="hidden mt-6 w-full max-w-2xl mx-auto sm:block lg:max-w-none"></div>
+              <div className="z-10 sticky bottom-1">
+                <Tab.List className="flex flex-wrap justify-center absolute inset-x-0 bottom-6 gap-4">
+                  {product.images.map((image) => (
+                    <Tab
+                      key={image.id}
+                      className="relative h-24 bg-white tab-rounded flex items-center justify-center text-sm font-medium uppercase text-gray-900 cursor-pointer hover:bg-gray-50 focus:outline-none focus:ring focus:ring-offset-4 focus:ring-opacity-50"
+                    >
+                      {({ selected }) => (
+                        <>
+                          <span className="sr-only">{image.name}</span>
+                          <span className="absolute inset-0 tab-rounded overflow-hidden">
+                            <Image
+                              src={image.src}
+                              width="100"
+                              height="100"
+                              alt=""
+                              className="w-full h-full object-center object-cover"
+                            />
+                          </span>
+                          <span
+                            className={classNames(
+                              selected ? 'ring-red-900' : 'ring-transparent',
+                              'absolute inset-0 tab-rounded ring-2 ring-offset-2 pointer-events-none',
+                            )}
+                          />
+                        </>
+                      )}
+                    </Tab>
+                  ))}
+                </Tab.List>
+              </div>
+              <Tab.Panels className="relative overflow-hidden w-full">
+                <button
+                  type="button"
+                  className="absolute top-1/2 left-2 md:left-4 rounded-full flex items-center justify-center text-gray-400 z-10"
+                  onClick={() => previousPhoto()}
+                >
+                  <span className="sr-only">prev</span>
+                  <i className="pe-7s-left-arrow mix-blend-screen text-black text-3xl"></i>
+                </button>
+                <button
+                  type="button"
+                  className="absolute top-1/2 right-2 md:right-4 rounded-full flex items-center justify-center text-gray-400 z-10"
+                  onClick={() => nextPhoto()}
+                >
+                  <span className="sr-only">next</span>
+                  <i className="pe-7s-right-arrow mix-blend-screen text-black text-3xl"></i>
+                </button>
+                <button
+                  type="button"
+                  className="absolute top-4 right-4 ml-4 py-3 px-3 rounded-md flex items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-500 z-10"
+                >
+                  <HeartIcon
+                    className="h-6 w-6 flex-shrink-0"
+                    aria-hidden="true"
+                  />
+                  <span className="sr-only">Add to favorites</span>
+                </button>
+                {product.images.map((image) => (
+                  <Tab.Panel key={image.id}>
+                    <a className="MagicZoom" id="zoom" title={image.alt} href={image.src}>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        width="662px"
+                        height="993px"
+                        src={image.src}
+                        alt={image.alt}
+                        layout="responsive"
+                        className="w-full h-full object-center object-cover sm:rounded-lg"
+                      />
+                    </a>
+                    {/* <Image
+                      width={662}
+                      height={993}
+                      src={image.src}
+                      alt={image.alt}
+                      layout="responsive"
+                      className="w-full h-full object-center object-cover sm:rounded-lg"
+                      priority
+                    /> */}
+                  </Tab.Panel>
+                ))}
+              </Tab.Panels>
+            </Tab.Group>
 
             {/* Product info */}
             <div className="sticky top-0 w-full sm:w-1/2">
