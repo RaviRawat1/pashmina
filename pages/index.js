@@ -26,26 +26,11 @@ export default function Home() {
       <Layout>
         <Videobanner />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-          <h2 className="text-center font-Orpheu text-4xl">
-            Art of Weaving
-          </h2>
-          <div className="py-4">
-            <div className="w-28 mx-auto border-2 border-red-900"></div>
+        <div className="max-w-[1240px] w-full mx-auto my-0 box-border">
+          <div className="pt-[44px] pb-[88px] px-0 box-border text-center">
+            <h2 className='font-krylonregular font-normal text-[28px] leading-8 tracking-[0.06em] text-[#56112A] mb-[17px] text-center' >Art of Weaving</h2>
+            <p className="font-Inter font-normal text-[14px] leading-[160%] tracking-[0.02em] text-[#2D2D2D] text-center'">Once the luxurious cashmere fiber has been spun into a complete yarn, it passes on to the weaver. The art of weaving is the turning point in the sojourn of a Pashmina. It transforms the Cashmere yarn into the finest pashmina shawls, stoles, scarves, throws, and apparel the human eye has ever seen. A weaver carefully mounts the yarn over his traditional wooden handloom and starts weaving with a harmonious effort of his hand and foot. It takes anywhere from 3 days to 2 weeks to finish weaving one pashmina scarf, pashmina wrap or a pashmina shawl. There are several weaves that are done but the Chasm-e-Bulbul or the popularly known Diamond weave remains the signature weave which we at pashmina.com use for all our creations.</p>
           </div>
-          <p className="text-center mt-6 text-lg">
-            Once the luxurious cashmere fiber has been spun into a complete
-            yarn, it passes on to the weaver. The art of weaving is the turning
-            point in the sojourn of a Pashmina. It transforms the Cashmere yarn
-            into the finest pashmina shawls, stoles, scarves, throws, and
-            apparel the human eye has ever seen. A weaver carefully mounts the
-            yarn over his traditional wooden handloom and starts weaving with a
-            harmonious effort of his hand and foot. It takes anywhere from 3
-            days to 2 weeks to finish weaving one pashmina scarf, pashmina wrap
-            or a pashmina shawl. There are several weaves that are done but the
-            Chasm-e-Bulbul or the popularly known Diamond weave remains the
-            signature weave which we at pashmina.com use for all our creations.
-          </p>
         </div>
 
         <section className="bg-rose-50 py-14">
