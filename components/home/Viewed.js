@@ -1,6 +1,5 @@
 import { A11y, Navigation, Scrollbar } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-
 import ArrowRight from '../icons/ArrowRight'
 import Image from 'next/image'
 import Link from "next/link"
@@ -127,7 +126,7 @@ const Viewed = () => {
     <>
       <ul className="man-women-tab list-none flex justify-center items-center mb-6">
         <li>
-          <a href="javascript:void(0)" data-id="womenid" onClick={()=>onTabPress(0)} 
+          <a href="#womenid" data-id="womenid" onClick={()=>onTabPress(0)} 
             className={'font-Inter  no-underline font-semibold text-base leading-4 tracking-[0.05em] inline-flex items-center justify-center px-8 border-b-2 border-solid  box-border h-12 ' +
             (type === 0
               ? "text-[#56112A] border-b-[#56112A]"
@@ -136,7 +135,7 @@ const Viewed = () => {
           </a>
         </li>
         <li>
-          <a href="javascript:void(0)" data-id="menid" onClick={()=>onTabPress(1)} className='font-Inter text-[#9C9C9C] no-underline font-semibold text-base leading-4 tracking-[0.05em] inline-flex items-center justify-center px-8 border-b-2 border-solid border-[#9C9C9C] box-border h-12 focus:text-[#56112A] focus:border-b-[#56112A]'>
+          <a href='#menid' data-id="menid" onClick={()=>onTabPress(1)} className='font-Inter text-[#9C9C9C] no-underline font-semibold text-base leading-4 tracking-[0.05em] inline-flex items-center justify-center px-8 border-b-2 border-solid border-[#9C9C9C] box-border h-12 focus:text-[#56112A] focus:border-b-[#56112A]'>
             MEN
           </a>
         </li>
