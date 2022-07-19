@@ -57,7 +57,7 @@ const Viewed = () => {
     
 
     {
-      src: '/images/viewed/view1.jpg',
+      src: '/images/viewed/view3.jpg',
       title: 'Solid Pashmina',
       type:1
     },
@@ -67,7 +67,7 @@ const Viewed = () => {
       type:1
     },
     {
-      src: '/images/viewed/view3.jpg',
+      src: '/images/viewed/view1.jpg',
       title: 'Reversible Pashmina',
       type:1
     },
@@ -103,7 +103,9 @@ const Viewed = () => {
     },
   ];
 
-  let currentType=0;
+  // const activeClass= styled.active`border-b-[#56112A]} text-[#56112A]`
+
+  // let currentType=0;
 
   const getText = text => {
     let customItems = text.split(" ");
@@ -115,18 +117,29 @@ const Viewed = () => {
     return customItems.join("");
   }
 
-  const [type, setType] = useState(0);
+  const [type, setType] = useState(0)
 
   const onTabPress=(type)=>{
-    currentType=setType;
-    this.setState({currentType:type});
+    setType(type);
   }
 
   return (
     <>
-      <ul className="man-women-tab list-none flex justify-center items-center">
-        <li className="active"><a href="javascript:void(0)" data-type="womenid" onClick={onTabPress} className='font-Inter text-[#9C9C9C] no-underline font-semibold text-base leading-4 tracking-[0.05em] inline-flex items-center justify-center px-8 border-b-2 border-solid border-[#9C9C9C] box-border h-12'>WOMEN</a></li>
-        <li><a href="javascript:void(0)" data-type="menid" className='font-Inter text-[#9C9C9C] no-underline font-semibold text-base leading-4 tracking-[0.05em] inline-flex items-center justify-center px-8 border-b-2 border-solid border-[#9C9C9C] box-border h-12'>MEN</a></li>
+      <ul className="man-women-tab list-none flex justify-center items-center mb-6">
+        <li>
+          <a href="javascript:void(0)" data-id="womenid" onClick={()=>onTabPress(0)} 
+            className={'font-Inter  no-underline font-semibold text-base leading-4 tracking-[0.05em] inline-flex items-center justify-center px-8 border-b-2 border-solid  box-border h-12 ' +
+            (type === 0
+              ? "text-[#56112A] border-b-[#56112A]"
+              : "text-[#9C9C9C] border-[#9C9C9C]")}>
+            WOMEN
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" data-id="menid" onClick={()=>onTabPress(1)} className='font-Inter text-[#9C9C9C] no-underline font-semibold text-base leading-4 tracking-[0.05em] inline-flex items-center justify-center px-8 border-b-2 border-solid border-[#9C9C9C] box-border h-12 focus:text-[#56112A] focus:border-b-[#56112A]'>
+            MEN
+          </a>
+        </li>
       </ul>
       <Swiper
         modules={[Navigation, Scrollbar, A11y]}
@@ -149,7 +162,7 @@ const Viewed = () => {
         className="most_viewed_swiper !px-5 md:!px-10 !pb-6"
         id="blogSlide"
       >
-        {slider.filter(o=>o.type==currentType).map((slide) => (
+        {slider.filter(o=>o.type==type).map((slide) => (
           <SwiperSlide key={uuid()}>
             <Link href="/productdetails" prefetch={false}>
               <div

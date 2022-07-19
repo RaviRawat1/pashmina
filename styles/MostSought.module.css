@@ -1,0 +1,47 @@
+.temp_class {padding: 0; margin: 0;}
+/* @font-face { font-family: 'krylonregular'; src: url('../fonts/krylon-regular-webfont.eot'); src: url('../fonts/krylon-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/krylon-regular-webfont.woff2') format('woff2'), url('../fonts/krylon-regular-webfont.woff') format('woff'), url('../fonts/krylon-regular-webfont.ttf') format('truetype'), url('../fonts/krylon-regular-webfont.svg#krylonregular') format('svg'); font-weight: normal; font-style: normal; } */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+.wrap_full { width: 100%; padding: 0 15px; box-sizing: border-box; }
+.box_container { max-width: 1240px; width: 100%; margin: 0 auto; box-sizing: border-box; }
+.art_weaving { padding: 44px 0 88px 0; box-sizing: border-box; text-align: center; }
+.content_size h2 { font-family: 'krylonregular', sans-serif; font-style: normal; font-weight: 400; font-size: 28px; line-height: 34px; letter-spacing: 0.06em; color: #56112A; margin: 0 0 17px 0; text-align: center; }
+.content_size p { font-family: 'Inter', sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 160%; text-align: center; letter-spacing: 0.02em; color: #2D2D2D; margin: 0; }
+.hot_selling { padding: 30px 0; box-sizing: border-box; }
+.hot_selling_wrap { background: #FFF9F9; }
+/* Handle on hover */
+.sought_pashmina_wrap { padding: 30px 0; box-sizing: border-box; }
+.sought_pashmina_row { display: flex; flex-wrap: wrap; margin: 0 -37px; box-sizing: border-box; }
+.sought_pashmina_row > * { width: 100%; padding: 0 37px; box-sizing: border-box; }
+.soughtpashmina_three { max-width: 33.33%; }
+.soughtpashmina_col { margin-top: 42px; position: relative; }
+.soughtpashmina_col:first-child { margin-top: 0; }
+.exclusive_link { position: absolute; display: inline-block; left: -20px; top: -70px; }
+.soughtpashmina_img { width: 100%; margin-bottom: 15px; border-radius: 80px 0 15px 0; position: relative; }
+.soughtpashmina_col h3 { font-family: 'krylonregular', sans-serif; font-style: normal; font-weight: 400; font-size: 18px; line-height: 22px; letter-spacing: 0.06em; color: #000; margin: 0; }
+.soughtpashmina_col p { font-family: 'Inter', sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 140.5%; letter-spacing: 0.045em; color: #616161; text-align: left; }
+.soughtpashmina_col ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: space-between; margin-top: 15px; }
+.soughtpashmina_col ul li a { font-family: 'Inter', sans-serif; font-style: normal; font-weight: 600; font-size: 14px; line-height: 17px; letter-spacing: 0.05em; color: #56112A; text-transform: uppercase; display: inline-flex; align-items: center; text-decoration: none; }
+.soughtpashmina_col ul li a svg { margin-left: 8px; }
+.soughtpashmina_col ul li a svg path { fill: #56112A; }
+@media(min-width: 768px) {
+    .soughtpashmina_col:nth-child(3) { margin-top: 0; }
+    .soughtpashmina_col:nth-child(3n + 2) { margin-top: 85px; }
+    .content_size h2 span.second_heading { font-family: 'Inter', sans-serif; font-style: normal; font-weight: 400; font-size: 80px; line-height: 97px; text-align: center; letter-spacing: 0.4em; color: #F5F5F5; position: absolute; opacity: 0.9; }
+    .sought_pashmina.content_size h2 { position: relative; height: 97px; display: flex; justify-content: center; align-items: center; margin-bottom: 25px; }
+    .content_size h2 span.main_heading { position: relative; z-index: 2; }
+}
+@media(max-width: 991px) {
+    .sought_pashmina { padding: 0 15px; }
+    .sought_pashmina-row { margin: 0 -15px; }
+    .sought_pashmina-row > * { padding: 0 15px; }
+}
+@media(max-width: 767px) {
+    .soughtpashmina_col:nth-child(2) { margin-top: 0; }
+    .soughtpashmina_three, .manwomen-row > * { max-width: 50%; }
+    .exclusive_link { display: none; }
+    .content-size h2 span { display: block; }
+}
+@media(max-width: 480px) {
+    .soughtpashmina_col:nth-child(2) { margin-top: 42px; } 
+    .soughtpashmina_three, .manwomen-row > * { max-width: 100%; }   
+}

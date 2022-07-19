@@ -13,6 +13,8 @@ import TopHeader from '../components/TopHeader'
 import Video from '../components/home/Video'
 import Videobanner from '../components/home/Videobanner'
 import Viewed from '../components/home/Viewed'
+import MostSoughtPashmina from '../components/home/MostSoughtPashmina'
+import MostSought from '../components/home/MostSought'
 
 export default function Home() {
   return (
@@ -44,6 +46,8 @@ export default function Home() {
             <Viewed />
           </div>
         </section>
+        
+        <MostSought/>
 
         <Collection />
         <Video />
