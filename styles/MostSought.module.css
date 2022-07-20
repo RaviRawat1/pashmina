@@ -43,5 +43,5 @@
 }
 @media(max-width: 480px) {
     .soughtpashmina_col:nth-child(2) { margin-top: 42px; } 
-    .soughtpashmina_three, .manwomen-row > * { max-width: 100%; }   
+     
 }
