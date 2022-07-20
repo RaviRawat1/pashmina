@@ -48,16 +48,6 @@ const Faq = () => {
         </h2>
         <hr className="mt-10 mb-6 md:mb-4 border-red-900" />
 
-        <div className="flex justify-center">
-          <div className="flex items-center w-full md:w-1/2 border-0 bg-gray-100 px-4 py-2.5 text-gray-900 placeholder-gray-500 sm:text-sm">
-            <input
-              className="flex-1 bg-transparent focus:ring-0 focus:outline-none"
-              placeholder="Search..."
-            />
-            <i className="pe-7s-search text-xl"></i>
-          </div>
-        </div>
-
         <div className="space-y-4 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-10 mt-4 md:mt-10">
           {faqs.map((faq) => (
             <dl key={faq.id}>

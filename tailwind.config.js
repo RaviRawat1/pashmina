@@ -15,10 +15,11 @@ module.exports = {
         38: '38rem',
       },
       colors: {
-        maroon: '#56112A',
+        maroon: '#4F0341',
         purple: '#7a1e99',
         pink: '#F2D4D7',
         yellow: '#faf8f2',
+        lime_yellow:'#FEFBF1',
       },
       fontFamily: {
         Orpheu: ['Orpheus Pro', 'sans-serif'],
