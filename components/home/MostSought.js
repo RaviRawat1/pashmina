@@ -5,7 +5,7 @@ import styles from "../../styles/MostSought.module.css"
 export default function MostSought() {
     console.log(styles)
   return (
-    <section className={`${styles.wrap_full} ${styles.sought_pashmina_wrap}`}>
+    <section className={`${styles.wrap_full} ${styles.sought_pashmina_wrap} ${styles.temp_class}`}>
 		<div className={`${styles.box_container}`}>
 			<div className={`${styles.sought_pashmina} ${styles.content_size}`}>
 				<h2>
