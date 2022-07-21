@@ -9,27 +9,27 @@ import 'swiper/css/scrollbar';
 const Videobanner = () => {
   const carousel = [
     {
-      src: '/images/carosuel/Banner1.png',
+      src: '/images/Carosuel/Banner1.png',
       title: 'Banner_1',
     },
     {
-      src: '/images/carosuel/Banner2.png',
+      src: '/images/Carosuel/Banner2.png',
       title: 'Banner_2',
     },
     {
-      src: '/images/carosuel/Banner3.png',
+      src: '/images/Carosuel/Banner3.png',
       title: 'Banner_3',
     },
     {
-      src: '/images/carosuel/Banner4.png',
+      src: '/images/Carosuel/Banner4.png',
       title: 'Banner_4',
     },
     {
-      src: '/images/carosuel/Banner5.png',
+      src: '/images/Carosuel/Banner5.png',
       title: 'Banner_5',
     },
     {
-      src: '/images/carosuel/Banner6.png',
+      src: '/images/Carosuel/Banner6.png',
       title: 'Banner_6',
     },
   ]
