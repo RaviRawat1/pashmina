@@ -9,95 +9,90 @@ import uuid from 'react-uuid'
 const Viewed = () => {
   const slider = [
     {
-      src: '/images/viewed/view1.jpg',
+      src: '/images/womenCollection/Solid_Pashmina.jpg',
       title: 'Solid Pashmina',
       type:0
     },
     {
-      src: '/images/viewed/view2.jpg',
+      src: '/images/womenCollection/Ombre_Pashmina.jpg',
       title: 'Ombre Pashmina',
       type:0
     },
     {
-      src: '/images/viewed/view3.jpg',
+      src: '/images/womenCollection/Shibori.jpg',
+      title: 'Shibori Pashmina',
+      type:0
+    },
+    {
+      src: '/images/womenCollection/Lace.jpg',
+      title: 'Lace Pashmina',
+      type:0
+    },
+    {
+      src: '/images/womenCollection/Printed.jpg',
+      title: 'Printed Pashmina',
+      type:0
+    },
+    {
+      src: '/images/womenCollection/Patterned.jpg',
+      title: 'Patterned Pashmina',
+      type:0
+    },
+    {
+      src: '/images/womenCollection/Reversible.jpg',
       title: 'Reversible Pashmina',
       type:0
     },
     {
-      src: '/images/viewed/view1.jpg',
-      title: 'Solid Pashmina',
-      type:0
-    },
-    {
-      src: '/images/viewed/view2.jpg',
-      title: 'Ombre Pashmina',
-      type:0
-    },
-    {
-      src: '/images/viewed/view3.jpg',
-      title: 'Reversible Pashmina',
-      type:0
-    },
-    {
-      src: '/images/viewed/view1.jpg',
-      title: 'Solid Pashmina',
-      type:0
-    },
-    {
-      src: '/images/viewed/view2.jpg',
-      title: 'Ombre Pashmina',
-      type:0
-    },
-    {
-      src: '/images/viewed/view3.jpg',
-      title: 'Reversible Pashmina',
+      src: '/images/womenCollection/Swarovski.jpg',
+      title: 'Swarovski Pashmina',
       type:0
     },
     
 
     {
-      src: '/images/viewed/view3.jpg',
-      title: 'Solid Pashmina',
+      src: '/images/menCollection/Kani.jpg',
+      title: 'Kani Pashmina',
       type:1
     },
     {
-      src: '/images/viewed/view2.jpg',
+      src: '/images/menCollection/Ombre_Pashmina.jpg',
       title: 'Ombre Pashmina',
       type:1
     },
     {
-      src: '/images/viewed/view1.jpg',
+      src: '/images/menCollection/Shibori.jpg',
+      title: 'Shibori Pashmina',
+      type:1
+    },
+    {
+      src: '/images/menCollection/Patterned.jpg',
+      title: 'Patterned Pashmina',
+      type:1
+    },
+    {
+      src: '/images/menCollection/Printed.jpg',
+      title: 'Printed Pashmina',
+      type:1
+    },
+    {
+      src: '/images/menCollection/Swaroski.jpg',
+      title: 'Swaroski Pashmina',
+      type:1
+    },
+    {
+      src: '/images/menCollection/Reversible.jpg',
       title: 'Reversible Pashmina',
       type:1
     },
     {
-      src: '/images/viewed/view1.jpg',
+      src: '/images/menCollection/Embroidered.jpg',
+      title: 'Embroidered Pashmina',
+      type:1
+    },
+    {
+      src: '/images/menCollection/Solid.jpg',
       title: 'Solid Pashmina',
-      type:1
-    },
-    {
-      src: '/images/viewed/view2.jpg',
-      title: 'Ombre Pashmina',
-      type:1
-    },
-    {
-      src: '/images/viewed/view3.jpg',
-      title: 'Reversible Pashmina',
-      type:1
-    },
-    {
-      src: '/images/viewed/view1.jpg',
-      title: 'Solid Pashmina',
-      type:1
-    },
-    {
-      src: '/images/viewed/view2.jpg',
-      title: 'Ombre Pashmina',
-      type:1
-    },
-    {
-      src: '/images/viewed/view3.jpg',
-      title: 'Reversible Pashmina',
       type:1
     },
   ];
@@ -169,8 +164,10 @@ const Viewed = () => {
                 rel="noreferrer"
               >
                 <Image
-                  height="547px"
-                  width="363px"
+                  height="450px"
+                  width="357px"
+                  layout='intrinsic'
+                  objectFit='contain'
                   src={slide.src}
                   alt={slide.title}
                   loading='lazy'
