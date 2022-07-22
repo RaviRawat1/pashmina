@@ -9,89 +9,89 @@ import uuid from 'react-uuid'
 const Viewed = () => {
   const slider = [
     {
-      src: '/images/womenCollection/Solid_Pashmina.jpg',
+      src: '/images/WomenCollection/Solid_Pashmina.jpg',
       title: 'Solid Pashmina',
       type:0
     },
     {
-      src: '/images/womenCollection/Ombre_Pashmina.jpg',
+      src: '/images/WomenCollection/Ombre_Pashmina.jpg',
       title: 'Ombre Pashmina',
       type:0
     },
     {
-      src: '/images/womenCollection/Shibori.jpg',
+      src: '/images/WomenCollection/Shibori.jpg',
       title: 'Shibori Pashmina',
       type:0
     },
     {
-      src: '/images/womenCollection/Lace.jpg',
+      src: '/images/WomenCollection/Lace.jpg',
       title: 'Lace Pashmina',
       type:0
     },
     {
-      src: '/images/womenCollection/Printed.jpg',
+      src: '/images/WomenCollection/Printed.jpg',
       title: 'Printed Pashmina',
       type:0
     },
     {
-      src: '/images/womenCollection/Patterned.jpg',
+      src: '/images/WomenCollection/Patterned.jpg',
       title: 'Patterned Pashmina',
       type:0
     },
     {
-      src: '/images/womenCollection/Reversible.jpg',
+      src: '/images/WomenCollection/Reversible.jpg',
       title: 'Reversible Pashmina',
       type:0
     },
     {
-      src: '/images/womenCollection/Swarovski.jpg',
+      src: '/images/WomenCollection/Swarovski.jpg',
       title: 'Swarovski Pashmina',
       type:0
     },
     
 
     {
-      src: '/images/menCollection/Kani.jpg',
+      src: '/images/MenCollection/Kani.jpg',
       title: 'Kani Pashmina',
       type:1
     },
     {
-      src: '/images/menCollection/Ombre_Pashmina.jpg',
+      src: '/images/MenCollection/Ombre_Pashmina.jpg',
       title: 'Ombre Pashmina',
       type:1
     },
     {
-      src: '/images/menCollection/Shibori.jpg',
+      src: '/images/MenCollection/Shibori.jpg',
       title: 'Shibori Pashmina',
       type:1
     },
     {
-      src: '/images/menCollection/Patterned.jpg',
+      src: '/images/MenCollection/Patterned.jpg',
       title: 'Patterned Pashmina',
       type:1
     },
     {
-      src: '/images/menCollection/Printed.jpg',
+      src: '/images/MenCollection/Printed.jpg',
       title: 'Printed Pashmina',
       type:1
     },
     {
-      src: '/images/menCollection/Swaroski.jpg',
+      src: '/images/MenCollection/Swaroski.jpg',
       title: 'Swaroski Pashmina',
       type:1
     },
     {
-      src: '/images/menCollection/Reversible.jpg',
+      src: '/images/MenCollection/Reversible.jpg',
       title: 'Reversible Pashmina',
       type:1
     },
     {
-      src: '/images/menCollection/Embroidered.jpg',
+      src: '/images/MenCollection/Embroidered.jpg',
       title: 'Embroidered Pashmina',
       type:1
     },
     {
-      src: '/images/menCollection/Solid.jpg',
+      src: '/images/MenCollection/Solid.jpg',
       title: 'Solid Pashmina',
       type:1
     },
