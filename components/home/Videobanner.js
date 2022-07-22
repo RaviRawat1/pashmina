@@ -34,12 +34,12 @@ const Videobanner = () => {
     },
   ]
   return (
-      <section className="md:py-vw-1/8 h-[81vh] md:h-[22rem] lg:h-[30rem] xl:h-[45rem] md:overflow-hidden w-full md:bg-black hero-banner">
-        <div className="inset-0 w-full h-full block">
+      <section>
+        {/* <div className="inset-0 w-full h-full block"> */}
           <Swiper
-            pagination={{
-              dynamicBullets: true,
-            }}
+            // pagination={{
+            //   dynamicBullets: true,
+            // }}
             modules={[Pagination, Navigation, A11y, Autoplay]}
             loop={true}
             navigation={true}
@@ -58,7 +58,7 @@ const Videobanner = () => {
                 </SwiperSlide>
               ))}
           </Swiper>
-        </div>
+        {/* </div> */}
       </section>
   )
 }

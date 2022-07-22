@@ -138,7 +138,7 @@ const Viewed = () => {
       <Swiper
         modules={[Navigation, Scrollbar, A11y]}
         spaceBetween={30}
-        slidesPerView={2}
+        slidesPerView={1.2}
         breakpoints={{
           536: {
             slidesPerView: 3,

@@ -11,24 +11,26 @@
 /* Handle on hover */
 .sought_pashmina_wrap { padding: 30px 0; box-sizing: border-box; }
 .sought_pashmina_row { display: flex; flex-wrap: wrap; margin: 0 0; box-sizing: border-box; }
-.sought_pashmina_row > * { width: 100%; padding: 0 37px; box-sizing: border-box; }
+.sought_pashmina_row > * { width: 100%; box-sizing: border-box; }
 .soughtpashmina_three { max-width: 33.33%; }
 .soughtpashmina_col { margin-top: 42px; position: relative; }
 .soughtpashmina_col:first-child { margin-top: 0; }
 .exclusive_link { position: absolute; display: inline-block; left: -20px; top: -70px; }
-.soughtpashmina_img { width: 100%; margin-bottom: 15px; border-radius: 80px 0 15px 0; position: relative; }
+.soughtpashmina_img { width: 100%; height: 100%; margin-bottom: 15px;  position: relative; }
 .soughtpashmina_col h3 { font-family: 'krylonregular', sans-serif; font-style: normal; font-weight: 400; font-size: 18px; line-height: 22px; letter-spacing: 0.06em; color: #000; margin: 0; }
 .soughtpashmina_col p { font-family: 'Inter', sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 140.5%; letter-spacing: 0.045em; color: #616161; text-align: left; }
 .soughtpashmina_col ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: space-between; margin-top: 15px; }
 .soughtpashmina_col ul li a { font-family: 'Inter', sans-serif; font-style: normal; font-weight: 600; font-size: 14px; line-height: 17px; letter-spacing: 0.05em; color: #4F0341; text-transform: uppercase; display: inline-flex; align-items: center; text-decoration: none; }
 .soughtpashmina_col ul li a svg { margin-left: 8px; }
 .soughtpashmina_col ul li a svg path { fill: #4F0341; }
+
 @media(min-width: 768px) {
     .soughtpashmina_col:nth-child(3) { margin-top: 0; }
     .soughtpashmina_col:nth-child(3n + 2) { margin-top: 85px; }
     .content_size h2 span.second_heading { font-family: 'Inter', sans-serif; font-style: normal; font-weight: 400; font-size: 80px; line-height: 97px; text-align: center; letter-spacing: 0.4em; color: #F5F5F5; position: absolute; opacity: 0.9; }
     .sought_pashmina.content_size h2 { position: relative; height: 97px; display: flex; justify-content: center; align-items: center; margin-bottom: 25px; }
     .content_size h2 span.main_heading { position: relative; z-index: 2; }
+    .sought_pashmina_row > * {padding: 0 37px; }
 }
 @media(max-width: 991px) {
     .sought_pashmina { padding: 0 15px; }
@@ -42,6 +44,8 @@
     .content-size h2 span { display: block; }
 }
 @media(max-width: 480px) {
-    .soughtpashmina_col:nth-child(2) { margin-top: 42px; } 
-    .soughtpashmina_three, .manwomen-row > * { max-width: 100%; } 
+    /* .soughtpashmina_col:nth-child(2) { margin-top: 42px; }  */
+    /* .soughtpashmina_three, .manwomen-row > * { max-width: 100%; }  */
+    .sought_pashmina_row > * {padding: 0 5px; }
+    .hideOnMobile{ display: none}
 }
