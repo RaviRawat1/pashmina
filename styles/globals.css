@@ -19,6 +19,13 @@
 }
 
 @font-face {
+  font-family: 'magnat';
+  src: url('../public/fonts/magnat-poster-regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'krylonregular';
   src: url('../public/fonts/krylon-regular-webfont.eot');
   src: url('../public/fonts/krylon-regular-webfont.eot?#iefix') format('embedded-opentype'), 

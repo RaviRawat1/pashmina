@@ -24,7 +24,8 @@ module.exports = {
       fontFamily: {
         Orpheu: ['Orpheus Pro', 'sans-serif'],
         Calibri: ['Calibri', 'sans-serif'],
-        krylonregular: ['krylonregular', 'sans-serif']
+        krylonregular: ['krylonregular', 'sans-serif'],
+        magnat: ['magnat', 'poster']
       },
 
       backgroundImage: {
