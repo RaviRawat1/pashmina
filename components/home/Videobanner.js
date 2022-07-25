@@ -61,33 +61,6 @@ const Videobanner = () => {
         </Swiper>
         {/* </div> */}
       </section>
-
-      <section>
-        {/* <div className="inset-0 w-full h-full block"> */}
-        <Swiper
-          // pagination={{
-          //   dynamicBullets: true,
-          // }}
-          modules={[Pagination, Navigation, A11y, Autoplay]}
-          loop={true}
-          navigation={true}
-          autoplay={true}
-          className="mySwiper"
-        >
-          {
-            carousel.map((item) => (
-              <SwiperSlide>
-                <img src={item.src}
-                  alt={item.title}
-                // height={542}
-                // width={1800}
-                >
-                </img>
-              </SwiperSlide>
-            ))}
-        </Swiper>
-        {/* </div> */}
-      </section>
     </>
   )
 }
