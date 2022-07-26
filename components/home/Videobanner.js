@@ -92,8 +92,9 @@ const Videobanner = () => {
           // pagination={{
           //   dynamicBullets: true,
           // }}
-          modules={[Pagination, Navigation, A11y, Autoplay]}
+          modules={[Pagination, Navigation, A11y, Autoplay, Scrollbar]}
           loop={true}
+          scrollbar={{ draggable: true }}
           navigation={true}
           autoplay={true}
           className="mySwiper"
@@ -105,6 +106,7 @@ const Videobanner = () => {
                   alt={item.title}
                 // height={542}
                 // width={1800}
+                className='w-full'
                 >
                 </img>
               </SwiperSlide>
