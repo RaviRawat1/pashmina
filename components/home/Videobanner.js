@@ -74,8 +74,10 @@ const Videobanner = () => {
               <SwiperSlide>
                 <img src={item.src}
                   alt={item.title}
-                // height={542}
-                // width={1800}
+                  // width={"100vw"}
+                  // height={""}
+                // layout="fill"
+                className='w-full'
                 >
                 </img>
               </SwiperSlide>
