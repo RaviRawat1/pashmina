@@ -33,9 +33,31 @@ const Videobanner = () => {
       title: 'Banner_6',
     },
   ]
+  const mobileView = [
+      {
+        src: '/images/Carosuel/mobile/Banner1.png',
+        title: 'Banner_1',
+      },
+      {
+        src: '/images/Carosuel/mobile/Banner2.png',
+        title: 'Banner_2',
+      },
+      {
+        src: '/images/Carosuel/mobile/Banner3.png',
+        title: 'Banner_3',
+      },
+      {
+        src: '/images/Carosuel/mobile/Banner4.png',
+        title: 'Banner_4',
+      },
+      {
+        src: '/images/Carosuel/mobile/Banner5.png',
+        title: 'Banner_5',
+      },
+    ]
   return (
     <>
-      <section>
+      <section className='desktopAndTabView md:block hidden'>
         {/* <div className="inset-0 w-full h-full block"> */}
         <Swiper
           // pagination={{
@@ -49,6 +71,33 @@ const Videobanner = () => {
         >
           {
             carousel.map((item) => (
+              <SwiperSlide>
+                <img src={item.src}
+                  alt={item.title}
+                // height={542}
+                // width={1800}
+                >
+                </img>
+              </SwiperSlide>
+            ))}
+        </Swiper>
+        {/* </div> */}
+      </section>
+
+      <section className='mobileView md:hidden'>
+        {/* <div className="inset-0 w-full h-full block"> */}
+        <Swiper
+          // pagination={{
+          //   dynamicBullets: true,
+          // }}
+          modules={[Pagination, Navigation, A11y, Autoplay]}
+          loop={true}
+          navigation={true}
+          autoplay={true}
+          className="mySwiper"
+        >
+          {
+            mobileView.map((item) => (
               <SwiperSlide>
                 <img src={item.src}
                   alt={item.title}
