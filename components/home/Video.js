@@ -20,9 +20,9 @@ const Video = () => {
   }, [isVisible]);
 
   return (
-    <div id="videoComp">
+    <div id="videoComp" className="sm:mt-8">
       <div>
-        <h2 className="text-center font-Orpheu text-4xl md:text-{40} 2xl:text-5xl">
+        <h2 className="text-center font-Orpheu text-[32px] md:text-{40}">
           Epitome of Luxury Fashion
         </h2>
         <div className="py-4 sm:mb-8">

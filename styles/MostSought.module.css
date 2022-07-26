@@ -4,7 +4,7 @@
 .wrap_full { width: 100%; padding: 0 15px; box-sizing: border-box; }
 .box_container { max-width: 1240px; width: 100%; margin: 0 auto; box-sizing: border-box; }
 .art_weaving { padding: 44px 0 88px 0; box-sizing: border-box; text-align: center; }
-.content_size h2 { font-family: 'krylonregular', sans-serif; font-style: normal; font-weight: 400; font-size: 28px; line-height: 34px; letter-spacing: 0.06em; color: #4F0341; margin: 0 0 17px 0; text-align: center; }
+.content_size h2 { font-family: 'krylonregular', sans-serif; font-style: normal; font-weight: 400; font-size: 32px; line-height: 34px; letter-spacing: 0.06em; color: #4F0341; margin: 0 0 17px 0; text-align: center; }
 .content_size p { font-family: 'Inter', sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 160%; text-align: center; letter-spacing: 0.02em; color: #2D2D2D; margin: 0; }
 .hot_selling { padding: 30px 0; box-sizing: border-box; }
 .hot_selling_wrap { background: #FFF9F9; }
