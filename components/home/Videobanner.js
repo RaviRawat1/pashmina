@@ -58,7 +58,6 @@ const Videobanner = () => {
   return (
     <>
       <section className='desktopAndTabView md:block hidden'>
-        {/* <div className="inset-0 w-full h-full block"> */}
         <Swiper
           // pagination={{
           //   dynamicBullets: true,
@@ -83,7 +82,6 @@ const Videobanner = () => {
               </SwiperSlide>
             ))}
         </Swiper>
-        {/* </div> */}
       </section>
 
       <section className='mobileView md:hidden'>
