@@ -35,23 +35,23 @@ const Videobanner = () => {
   ]
   const mobileView = [
       {
-        src: '/images/Carosuel/mobile/Banner1.png',
+        src: '/images/Carosuel/mobile/Banner1_M.jpg',
         title: 'Banner_1',
       },
       {
-        src: '/images/Carosuel/mobile/Banner2.png',
+        src: '/images/Carosuel/mobile/Banner2_M.jpg',
         title: 'Banner_2',
       },
       {
-        src: '/images/Carosuel/mobile/Banner3.png',
+        src: '/images/Carosuel/mobile/Banner3_M.jpg',
         title: 'Banner_3',
       },
       {
-        src: '/images/Carosuel/mobile/Banner4.png',
+        src: '/images/Carosuel/mobile/Banner4_M.jpg',
         title: 'Banner_4',
       },
       {
-        src: '/images/Carosuel/mobile/Banner5.png',
+        src: '/images/Carosuel/mobile/Banner5_M.jpg',
         title: 'Banner_5',
       },
     ]
